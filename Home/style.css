@@ -1,0 +1,106 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    height: 10vh;
+    align-items: center;
+}
+
+header a {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Hero */
+
+.hero {
+    height: 70vh;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../imgs/banner-principal-home.png);
+    background-size: cover;
+    
+    align-items: center;
+}
+
+.hero p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.hero a {
+    height: 50px;
+    width: 180px;
+    background-color: var(--cor-destaque);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: 700;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.hero-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 30em;
+    justify-content: center;
+}
+
+.hero img {
+    align-self: last baseline;
+    width: 35%;
+}
+
+/* Seção 2 - Por que usar Bibliotec */
+
+.secao {
+    padding: 50px 120px;
+    align-content: center;
+}
+
+.secao h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.linha-horizontal {
+    height: 1px;
+    width: 300px;
+    border-color: var(--cor-destaque);
+}
+
+.card {
+    height: 10vh;
+}
