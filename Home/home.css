@@ -1,0 +1,302 @@
+
+/* CABEÇALHO */
+
+a {
+    color: var(--branco);
+    text-decoration: none; /* tira o sublinhado do link */
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+
+    display: flex;
+    /* flex-direction: row; */
+
+    /* alinha no sentido do flex */
+    justify-content: space-between;
+
+    /* alinha no sentido contrário do flex */
+    align-items: center;
+
+    padding: 0 120px;
+
+    height: 10vh; /* 10% da visualização vertical do dispositivo */
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+    font-size: 1em; /* equivale a 16px */  
+    font-weight: 500;
+}
+
+/* Conteúdo principal */
+
+/* Primeiro banner */
+.banner-principal {
+    color: var(--branco);
+
+    height: 70vh;
+
+    background-image: url(../imgs/banner-principal-home.png);
+    background-size: cover;
+
+    /* overflow: hidden;  evita que os elementos transbordem */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 120px;
+}
+
+.texto-banner {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.texto-banner p {
+    font-size: 1.5em;
+    width: 60%;
+}
+
+.botao {
+    padding: 20px 50px;
+
+    border-radius: 10px;
+
+    background-color: var(--cor-destaque);
+    color: var(--azul-escuro);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    transition: 500ms;
+
+    text-transform: uppercase;
+}
+
+.banner-principal img {
+    align-self: flex-end;
+    width: 35%;
+}
+
+.botao:hover {
+    transition: 500ms;
+    background-color: var(--azul-escuro);
+    color: var(--cor-destaque);
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.botao:active {
+    transition: 100ms;
+    scale: 0.95;
+}
+
+/* Titulo das secoes */
+
+.titulo-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-secao h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.titulo-secao span {
+    border: 2px solid var(--cor-destaque);
+    width: 250px;
+    border-radius: 100px;
+    margin-bottom: 100px;
+}
+
+/* Secao beneficios */
+
+.beneficios {
+    padding: 50px 120px;
+
+}
+
+.beneficios-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    gap: 10%;
+    justify-content: center;
+}
+
+.beneficio {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--azul-escuro);
+    border-radius: 30px;
+    padding: 80px 30px 50px;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.beneficio h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    width: 70%;
+    align-self: center;
+}
+
+.beneficio p {
+    font-size: 1em;
+    width: 80%;
+    align-self: center;
+}
+
+.beneficio-icone img {
+    width: 50%;
+}
+
+.beneficio-icone {
+
+    border: 4px solid var(--cor-destaque);
+    background-color: white;
+    border-radius: 50%;
+    width: 35%;
+    height: 38%;
+
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+    
+}
+
+/* Banner meio */
+
+.banner-meio {
+    padding: 0 120px;
+    background-image: url(../imgs/Banner\ centro.svg);
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Top livros */
+
+.card-livro {
+    display: grid;
+    place-items: center;
+}
+
+.card-livro h2 {
+    text-transform: uppercase;
+    width: 60%;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.card-livro h3 {
+    margin: 10px;
+}
+
+.top-livros {
+    padding: 50px 120px;
+}
+
+.cards-livros {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    align-content: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--azul-escuro);
+    height: 50vh;
+    padding: 50px 120px 20px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer p {
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+.nav-footer a {
+    margin-bottom: 10px;
+}
+
+footer .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.grid-footer {
+    display: grid;
+    gap: 100px;
+}
+
+.logos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.redes-logos {
+    display: flex;
+    gap: 20px;
+    grid-area: logos;
+}
+
+.redes p {
+    color: var(--cor-destaque);
+}
+
+footer .linha {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.ultimo {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.ultimos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
