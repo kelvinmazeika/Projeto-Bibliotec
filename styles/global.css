@@ -22,3 +22,57 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* CABEÇALHO */
+
+a {
+    color: var(--branco);
+    text-decoration: none; /* tira o sublinhado do link */
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+
+    display: flex;
+    /* flex-direction: row; */
+
+    /* alinha no sentido do flex */
+    justify-content: space-between;
+
+    /* alinha no sentido contrário do flex */
+    align-items: center;
+
+    padding: 0 120px;
+
+    height: 10vh; /* 10% da visualização vertical do dispositivo */
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+    font-size: 1em; /* equivale a 16px */  
+    font-weight: 500;
+    transition: 200ms;
+}
+
+.navegacao a:hover {
+    transition: 200ms;
+    scale: 1.05;
+}
+
+/* Main */
+
+.login {
+    background-color: #E9F0EF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 50px;
+}
