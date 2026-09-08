@@ -11,6 +11,7 @@
     --texto: #26333D;
     --branco: #FFFFFF;
     --cor-destaque: #2FD6CB;
+    --fundos : #E9F0EF;
 }
 
 body {
@@ -64,15 +65,4 @@ a {
 .navegacao a:hover {
     transition: 200ms;
     scale: 1.05;
-}
-
-/* Main */
-
-.login {
-    background-color: #E9F0EF;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 30px;
-    padding: 50px;
 }

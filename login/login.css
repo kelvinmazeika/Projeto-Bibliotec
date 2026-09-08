@@ -24,10 +24,130 @@ a.effect-underline:hover:after {
 
 /* MAIN CONTENT */
 
-body {
-    background-image: url(../imgs/banner-principal-home.png);
-    background-repeat: no-repeat;
+.conteudo {
+    background-image: url(../imgs/banner-login.png);
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     background-position: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: var(--fundos);
+    border-radius: 30px;
+    gap: 50px;
+    padding: 50px 100px;
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-header {
+    font-size: 1em;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, .botao-entrar, .botao-google {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.campo label {
+    color: var(--azul-escuro);
+    font-weight: 700;
+}
+
+.campo input {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.campo input::placeholder {
+    letter-spacing: 1px;   
+    font-style: italic;
+    color: #00000050;
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.botao-olho {
+    position: absolute;
+    right: 20px;
+    border: none;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #00000050;
+}
+
+.botao-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+    box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 300ms;
+}
+
+.botao-entrar {
+    margin-top: 30px;
+    background-color: var(--azul-escuro);
+    text-transform: uppercase;
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 300ms;
+}
+
+.botao-entrar:hover {
+    cursor: pointer;
+    background-color: #344957;
+    transform: translateY(-3px);
+    
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-google img {
+    width: 30px;
+    height: 30px;
 }
