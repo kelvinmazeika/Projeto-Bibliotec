@@ -1,0 +1,221 @@
+
+/* Busca */
+
+.area-busca {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.campo-busca {
+    flex: 1;
+    /* A propriedade flex: 1 no CSS faz com que um item flexível cresça e encolha para ocupar todo o espaço disponível no container */
+    /* É um atalho rápido para três propriedades juntas: flex-grow: 1, flex-shrink: 1 e flex-basis: 0%.
+    flex-grow: 1: Permite que o elemento cresça e ocupe o espaço vazio.
+    flex-shrink: 1: Faz o item encolher se faltar espaço.
+    flex-basis: 0: Zera o tamanho inicial para que o espaço seja dividido igualmente. */
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.campo-busca i {
+    color: var(--azul-escuro);
+    font-size: 20px;
+}
+
+.campo-busca input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9em;
+    color: var(--textos-paginas);
+    height: 100%;
+}
+
+.botao-filtro {
+    height: 50px;
+    width: 15%;
+    padding: 0 20px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: inherit;
+    font-size: 1.1em;
+    color: var(--texto);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 100ms;
+    
+}
+
+.botao-filtro i {
+    font-size: 20px;
+    color: var(--texto);
+}
+
+.botao-filtro:hover {
+    transition: 100ms;
+    scale: 1.05;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Livros */
+
+.cabecalho-lista {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    margin-top: 50px;
+    padding: 0 20px 20px;
+    font-weight: 700;
+}
+
+.cabecalho-lista h2:nth-child(1) {
+    text-align: left;
+}
+
+.cabecalho-lista h2 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.livro {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    height: 60px;
+    padding: 0 20px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    font-size: 1em;
+}
+
+.nome-livro {
+    justify-self: flex-start;
+}
+
+input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: 1px solid var(--textos-paginas);
+    border-radius: 5px;
+    appearance: none;
+    transition: 100ms;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--cor-destaque);
+    border: none;
+    transition: 100ms;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: var(--branco);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.botao-acao {
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: var(--textos-paginas);
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.botao-acao:hover {
+    transition: 100ms;
+    color: var(--cor-destaque);
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.lista-livros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rodape-listagem {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid var(--cor-bordas);
+    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.quantidade-livros {
+    font-size: 0.8em;
+    color: var(--textos-paginas);
+    font-weight: 600;
+}
+
+.paginacao {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao-pagina {
+    background: transparent;
+    border: none;
+    color: var(--textos-paginas);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.pagina-atual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+
+    border-radius: 10px;
+
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.status-livro::after {
+    content: "Aguardando Retirada";
+    color: #D34A00;
+}
+
+.retirado::after {
+    color: #00A223;
+    content: "Retirado";
+}
+
